@@ -42,6 +42,7 @@ h1 {
   display: none;
   padding: 50px;
   text-align: center;
+  height: 100%;
 }
 
 #London {background-color:red;}
