@@ -45,6 +45,13 @@ h1 {
   height: 100%;
 }
 
+.iframecontent {
+  color: white;
+  padding-right: 100px;
+  text-align: center;
+  height: 100%;
+}
+
 #London {background-color:red;}
 #Paris {background-color:green;}
 #Tokyo {background-color:blue;}
