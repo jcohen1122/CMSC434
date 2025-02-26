@@ -45,9 +45,16 @@ h1 {
   height: 100%;
 }
 
+iframe {
+  overflow: scroll;
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+}
+
 .iframecontent {
   color: white;
-  padding-right: 100px;
+  padding-right: 40px;
   text-align: center;
   height: 100%;
 }
