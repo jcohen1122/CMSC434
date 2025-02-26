@@ -59,8 +59,14 @@ iframe {
   height: 100%;
 }
 
-#London {background-color:red;}
-#Paris {background-color:green;}
+.lowerright {
+  position:absolute;
+  bottom:15%;
+  right:5%;
+}
+
+#Text {background-color:red;}
+#LR {background-color:green;}
 #Tokyo {background-color:blue;}
 #Oslo {background-color:orange;}
 #Madrid {background-color:pink;}
