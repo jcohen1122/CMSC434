@@ -29,7 +29,7 @@ h1 {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 20px;
   width: 16.667%;
 }
 
@@ -61,13 +61,13 @@ iframe {
 
 .lowerright {
   position:absolute;
-  bottom:15%;
+  bottom:20%;
   right:5%;
 }
 
 #Text {background-color:red;}
 #LR {background-color:green;}
 #Colors {background-color:pink;}
-#Oslo {background-color:orange;}
-#Madrid {background-color:pink;}
-#DC {background-color:black;}
+#Profile {background-color:orange;}
+#Choices {background-color:blue;}
+#ToDo {background-color:black;}
