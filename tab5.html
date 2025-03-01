@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Choices Tab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            margin: 0;
+            padding: 20px;
+            text-align: left;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lightgray;
+        }
+        #output {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function displayChoice() {
+            var radioValue = document.querySelector('input[name="camera1"]:checked')?.value || "None";
+            var dropdownValue = document.getElementById("camera2").value;
+            document.getElementById("output").innerText = "Camera Type #1: " + radioValue + " | Camera Type #2: " + dropdownValue;
+        }
+    </script>
 </head>
 <body>
-    <div class = "iframecontent">
-        <h1>Madrid</h1>
-        <p>Madrid is the capital city of Spain.</p>
-    </div>
+    <h1>-Choices Screen-</h1>
+    <label>Camera Type #1:</label><br>
+    <input type="radio" name="camera1" value="dSLR"> dSLR<br>
+    <input type="radio" name="camera1" value="Mirrorless"> Mirrorless<br><br>
+    <label>Camera Type #2:</label><br>
+    <select id="camera2">
+        <option value="dSLR">dSLR</option>
+        <option value="Mirrorless">Mirrorless</option>
+    </select><br><br>
+    <button onclick="displayChoice()">Print something based on above choices...</button>
+    <div id="output"></div>
 </body>
 </html>
